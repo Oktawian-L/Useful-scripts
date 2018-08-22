@@ -1,5 +1,6 @@
 Set objShell = WScript.CreateObject("WScript.Shell")
 Set objFSO = CreateObject("Scripting.FileSystemObject") 
+
 strDesktop = objShell.SpecialFolders("Desktop")
 Set lnk= objShell.CreateShortcut(strDesktop+"\S4.lnk")
 CurrentDirectory = objFSO.GetAbsolutePathName(".")
